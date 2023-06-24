@@ -1,17 +1,11 @@
 #!/usr/bin/python3
-"""Function to retrieve a list of lists
-    of integers representing the pascal triangle
+"""Function that reads a text file
+    and prints it in the stdout
 """
 
 
-def pascal_triangle(n):
-    """Get list of lists of integers representing
-        the pascal trinagle
-    """
-    if n <= 0:
-        return []
-    triangle = [[1]]
-    for _ in range(2, n + 1):
-        tmp = [0] + triangle[-1] + [0]
-        triangle.append([sum(pair) for pair in zip(tmp, tmp[1:])])
-    return triangle
+def read_file(filename=""):
+    """Print file only read"""
+    with open(filename, 'r', encoding="utf-8") as f:
+        for line in f:
+            print(line, end="")
