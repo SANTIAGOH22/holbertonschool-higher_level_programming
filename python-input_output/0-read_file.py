@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-'''Function that read a text file UTF8'''
+"""Function that reads a text file
+    and prints it in the stdout
+"""
 
 
 def read_file(filename=""):
-    '''open file reads UTF8'''
-    with open(filename, "r", encoding="utf-8") as file:
-        for line in file:
+    """Print file only read
+    """
+    with open(filename, 'r', encoding="utf-8") as f:
+        for line in f:
             print(line, end="")
-
