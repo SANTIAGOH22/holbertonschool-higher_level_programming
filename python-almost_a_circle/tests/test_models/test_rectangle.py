@@ -4,6 +4,7 @@ from unittest.mock import patch
 import io
 from io import StringIO
 
+
 class TestRectangle(unittest.TestCase):
     
     def test_rectangle_initialization(self):

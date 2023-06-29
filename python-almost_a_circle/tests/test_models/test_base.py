@@ -171,7 +171,6 @@ class TestBase_save_to_file(unittest.TestCase):
         self.assertEqual(square.x, 4)
         self.assertEqual(square.y, 5)
 
-
 class TestSquare(unittest.TestCase):
 
     def test_square_load_from_file(self):
